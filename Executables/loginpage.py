@@ -375,10 +375,8 @@ class LoginPage(QWidget):
     # [NEW] Face login logic
     def handle_login_face(self):
         self.status_label.setText("Starting face login...")
-        
-        # [IMPORTANT] Anda harus mengubah angka '1' ini
-        # ke indeks kamera Anda yang benar (Logi 270 cam)
-        CAMERA_INDEX_TO_USE = 1 
+    
+        CAMERA_INDEX_TO_USE = 0
         
         self.login_dialog = FaceLoginDialog(CAMERA_INDEX_TO_USE, self)
         

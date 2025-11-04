@@ -441,7 +441,7 @@ class RegisterPage(QWidget):
         # --- [NEW] We need to know which camera to use ---
         # For now, let's hard-code index 1 (your Logi 270 cam)
         # We can make this a dropdown later if you want.
-        CAMERA_INDEX_TO_USE = 1 # <-- [IMPORTANT] Change this if your camera index is different
+        CAMERA_INDEX_TO_USE = 0 # <-- [IMPORTANT] Change this if your camera index is different
         
         self.capture_dialog = FaceCaptureDialog(username, CAMERA_INDEX_TO_USE, self)
         # Connect the final signal to switch pages
